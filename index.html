@@ -11,20 +11,22 @@
         <div class="form-img">
             <img src="assets/img/undraw_shopping_re_hdd9.svg" alt="">
         </div>
+
         <div class="form">
-            <form action="#" method="post">
+            <form action="#" method="post" autocomplete="on">
                 <div class="form-header">
-                    <div class="title">
+                     <div class="title">
                         <h1>Cadastre-se</h1>
                     </div>
-                    <div class="login-button">
-                        <button><a href="#">Entrar</a></button>
-                    </div>
-                    </div>
+                        <div class="login-button">
+                            <button><a href="#">Entrar</a></button>
+                        </div>
+                </div>
+
                     <div class="input-group">
                         <div class="input box">
                             <label for="ifirstname">Primeiro nome</label>
-                            <input type="text" name="firstname" id="ifirstname" required placeholder="Digite seu primeiro nome">
+                            <input type="text" name="firstname" id="ifirstname" required placeholder="Digite seu primeiro nome" autocomplete="name">
                         </div>
                         <div class="input box">
                             <label for="ilastname">Sobrenome</label>
@@ -32,15 +34,50 @@
                         </div>
                         <div class="input box">
                             <label for="iemail">E-mail</label>
-                            <input type="email" name="email" id="iemail" required placeholder="Digite seu e-mail">
+                            <input type="email" name="email" id="iemail" required placeholder="Digite seu e-mail" autocomplete="email">
                         </div>
                         <div class="input box">
                             <label for="inumber">Telefone</label>
-                            <input type="tel" name="number" id="inumber" required placeholder=" Digite seu telefone" >
+                            <input type="tel" name="number" id="inumber" required placeholder=" (xx) xxxx-xxxx " pattern="^\(\d{2}\)\d{4,5}-\d{4}$" maxlength="11" autocomplete="tel">
+                        </div>
+                        <div class="input box">
+                             <label for="ipassword">Senha</label>
+                            <input type="password" name="email" id="ipassword" required placeholder="Digite sua senha">
+                        </div>
+                        <div class="input box">
+                            <label for="iconfirmpassword">Confirme  sua senha</label>
+                            <input type="confirmpassword" name="email" id="iconfirmpassword" required placeholder="Digite sua senha">
+                        </div>
+                    </div>
+                
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Gênero</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <label for="ifamele">Feminino</label>
+                            <input type="radio" name="gender" id="ifamele">  
+                        </div>
+                        <div class="gender-input">
+                            <label for="imasculine">Masculino</label>
+                            <input type="radio" name="gender" id="imasculine">
+                        </div>
+                        <div class="gender-input">
+                            <label for="iothers">Outros</label>
+                            <input type="radio" name="gender" id="iothers">
+                        </div>
+                        <div class="gender-input">
+                            <label for="inone">Prefiro não dizer</label>
+                            <input type="radio" name="gender" id="inone">
                         </div>
                     </div>
                 </div>
-                 
+
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a></button>
+                </div>
             </form>
         </div>
     </div>
