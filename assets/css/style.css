@@ -196,7 +196,7 @@ body {
         flex-direction: column;
         overflow-y: scroll;
         flex-wrap: nowrap;
-        max-height: 10rem;
+        max-height: 17rem;
         padding-right: 5rem;
     }
     .gender-inputs {
